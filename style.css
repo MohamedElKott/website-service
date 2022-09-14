@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* scroll-behavior: smooth; */
+}
+body {
+    text-align: right;
+    font-size: 10px;
+}
+p {
+    line-height: 1.5;
+}
+
+/* start nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    align-items: center;
+}
+nav img {
+    height: 30px;
+}
+nav a {
+    text-decoration: none;
+    margin: 5px;
+}
+/* end nav */
+
+/* start img */
+#img {
+    position: relative;
+    height: 20vh;
+    background-image: url("images/back.jpg");
+    background-size: cover;
+}
+#img a:first-child {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+}
+#img a:nth-child(2) {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+}
+#img .icon {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+}
+#img .icon div {
+    margin: 2px;
+    width: 5px;
+    height: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+#img .icon div:last-child {
+    background-color: white;
+}
+/* end img */
+
+/* start service */
+#service {
+    text-align: center;
+    margin-top: 10%;
+    padding: 0 20px;
+}
+#service h1 {
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+#service div div {
+    border: 1px solid rgb(175, 168, 168);
+    margin: 15px 100px;
+}
+#service div div i {
+    font-size: 30px;
+    margin: 30px;
+}
+#service a {
+    display: flex;
+    justify-content: center;
+    margin: 10px 70px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    border: 2px solid blue;
+    background-color: blue;
+    color: white;
+}
+#service p {
+    padding: 10px;
+}
+#service div div:nth-child(1) h2 {
+    color: blue;
+}
+#service div div:nth-child(1) a {
+    background-color: blue;
+    border: 2px solid blue;
+}
+#service div:nth-child(2) h2 {
+    color: green;
+}
+#service div:nth-child(2) a {
+    background-color: green;
+    border: 2px solid green;
+}
+#service div:nth-child(3) h2 {
+    color: red;
+}
+#service div:nth-child(3) a {
+    background-color: red;
+    border: 2px solid red;
+}
+#service div:nth-child(4) h2 {
+    color: rgb(103, 187, 226);
+}
+#service div:nth-child(4) a {
+    background-color: rgb(103, 187, 226);
+    border: 2px solid rgb(103, 187, 226);
+}
+/* end service */
+
+/* start website */
+#website {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#website h1 {
+    padding: 20px;
+    font-size: 20px;
+}
+#website p {
+    margin-top: 10px;
+    padding: 6px 40px;
+
+}
+#website p:nth-child(1) span{
+    color: green;
+}
+#website p:nth-child(2) span {
+    color: blue;
+}
+#website p:nth-child(3) span {
+    color: red;
+}
+/* end website */
+
+/* start plan */
+#plan {
+    text-align: center;
+    margin-bottom: 40px;
+}
+#plan h1 {
+    font-size: 30px;
+    padding: 40px 20px 20px;
+}
+#plan div div {
+    border: 1px solid rgb(117, 105, 105);
+    margin: 20px 80px;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+#plan h2 {
+    padding-top: 5px;
+    padding-bottom: 10px;   
+}
+/* end plan */
+
+/* start footer */
+footer {
+    background-image: url("images/footer\ 2.jpg");
+    background-size: cover;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 30px;
+    position: relative;
+    z-index: -1;
+}
+footer::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+footer .links div {
+    padding: 20px;
+}
+footer div a {
+    text-decoration: none;
+    color: white;
+}
+footer div li {
+    list-style: none;
+    margin: 10px;
+}
+footer div h3 {
+    color: rgb(13, 112, 179);
+    margin-bottom: 15px;
+}
+footer .social a {
+    padding: 0 10px;
+}
+footer .social a:nth-child(1) {
+    font-size: 40px;
+    color: rgb(16, 38, 238);
+}
+footer .social a:nth-child(2) {
+    font-size: 40px;
+    color: red
+}
+footer .social a:nth-child(3){
+    font-size: 40px;
+    color: rgb(33, 49, 194);
+}
+footer .social a:nth-child(4) {
+    font-size: 40px;
+    color: rgb(3, 13, 107);
+}
+footer .end {
+    background-color: black;
+    height: 40px;
+    padding-top: 10px;
+}
+footer .end span {
+    position: relative;
+    color: white;
+    font-size: 15px;
+}
+footer .end span:nth-child(1) {
+    position: absolute;
+    right: 10px;
+}
+footer .end span:nth-child(2) {
+    position: absolute;
+    left: 10px;
+}
+/* end footer */
+
+@media (min-width:768px) {
+    /* stat nav */
+    nav {
+        margin: 0 60px;
+        font-size: 20px;
+    }
+    nav img {
+        width: 6%;
+        height: 6%;
+    }
+    /* end nav */
+
+    /* start img */
+    #img {
+        height: 600px;
+    }
+    #img .icon div {
+        width: 10px;
+        height: 10px;
+    }
+    #img a i {
+        font-size: 30px;
+    }
+    #img a:first-child {
+        left: 60px;
+    }
+    #img a:nth-child(2) {
+        right: 60px;
+    }
+    /* end img */
+
+    /* start service */
+    #service {
+        margin-top: 50px;
+    }
+    #service h1 {
+        font-size: 30px;
+    }
+    #service > div {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+        margin: 10px;
+    }
+    #service div div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 20%;
+        padding: 50px 10px;
+        margin: 20px;
+    }
+    #service div div a {
+        margin: 20px 80px;
+        padding: 8px;
+    }
+    /* end service */
+
+    /* start website */
+    #website h1 {
+        font-size: 30px;
+        padding-top: 50px;
+    }
+    #website > div {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+    }
+    #website img {
+        margin-left: 120px;
+        width: 60%;
+    }
+    #website p {
+        font-size: 15px;
+        padding: 10px 140px;
+    }
+    #website p span {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    /* end website */
+
+    /* start plan */
+    #plan h1 {
+        font-size: 40px;
+    }
+    #plan > div {
+        display: flex;
+        margin: 0 10%;
+    }
+    #plan > div div {
+        width: 20%;
+        margin: 20px auto;
+        height: 200px;
+        padding-top: 40px;
+    }
+    /* end plan */
+
+    /* start footer */
+    footer .links {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        text-align: end;
+    }
+    footer .links div ul {
+        margin-right: 30px;
+    }
+    footer .social {
+        display: flex;
+        justify-content: end;
+        margin-right: 120px;
+        margin-bottom: 50px;
+    }
+    footer .end span:nth-child(1) {
+        margin-right: 120px;
+    }
+    footer .end span:nth-child(2) {
+        margin-left: 120px;
+    }
+    /* end footer */
+}
